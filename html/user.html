@@ -8,5 +8,21 @@
 </head>
 <body>
     <h1 style="text-align: center;">USER DETAILS</h1>
+    <div class="main">
+        <input type="text" placeholder="Enter Your Hall ticket" id="roll">
+        <p id="res1"></p>
+    </div>
+    <script>
+        function ids{
+            var data = document.getElementById("roll").value;
+            if(data=='212U1A0596'){
+                var res="Login Successfull";
+            }
+            else{
+                var res="Login FGailed";
+            }
+            document.getElementById("res1").innerHTML=res;
+        }
+    </script>
 </body>
 </html>
