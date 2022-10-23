@@ -5,21 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Users</title>
+    <style>
+        .main{
+            max-width:max-content;
+            height: 20vh;
+            
+        }
+        .main input{
+            padding: 10px;
+            position: relative;
+            left: 2px;
+            top: 5px;
+        }
+        .main button{
+            padding: 10px;
+            position: relative;
+            left: -2px;
+            top: 5px;
+        }
+        .main p{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <h1 style="text-align: center;">USER DETAILS</h1>
-    <div class="main">
+    <div class="main" style="margin: auto;">
         <input type="text" placeholder="Enter Your Hall ticket" id="roll">
+        <button type="button" onclick="ones()">CLICK ME</button>
         <p id="res1"></p>
     </div>
     <script>
-        function ids{
+        function ones(){
             var data = document.getElementById("roll").value;
             if(data=='212U1A0596'){
                 var res="Login Successfull";
             }
             else{
-                var res="Login FGailed";
+                var res="Login Failed";
             }
             document.getElementById("res1").innerHTML=res;
         }
