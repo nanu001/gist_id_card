@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        h1{
+            text-align: center;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .ip{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2%;
+        }
+        .btn  button{
+            width: 8vw;
+            height: 5vh;
+            color: white;
+            background-color:skyblue ;
+            border: none;
+            cursor: pointer;
+        }
+        .btn button:hover{
+            width: 15vw;
+            height: 10vh;
+            margin-top: -1%;
+            background-color: cornsilk;
+            color: darkviolet;
+        }
+
+        button:active{
+            background-color: burlywood;
+            color: black;
+        }
+
+
+        .ip input{
+            height: 4vh;
+            font-size: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="log">
+        <h1>Login</h1>
+    </div>
+    <div class="ip">
+        <input type="text" placeholder="Enter ID" id="tt" required />
+    </div>
+    <div class="btn">
+        <button onclick="basha()">Enter</button>
+    </div>
+    <script>
+        function basha(){
+            var data=document.getElementById("tt").value;
+            if (data==58462 || data == 10201819){
+                window.location.href =  "https://github.com/786basha?tab=repositories";
+            }
+            else{
+                console.log("Error occured.")
+            }
+        }
+    </script>
+</body>
+</html>
