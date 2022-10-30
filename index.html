@@ -16,6 +16,10 @@
         }        
         body{
             background-color: indianred;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
         }
         .main{
             background-color: palevioletred;
@@ -24,7 +28,7 @@
             box-shadow: 2px 4px 50px black;
             margin: auto;
             position:relative;
-            top: 10vh;
+            top: 4vh;
         }
         .main h1{
             padding: 10px;
@@ -71,9 +75,13 @@
                 background-color: lavender;
             }
             .main{
-                border: 2px dashed black;
+                border: 1px solid black;
                 background-color: aqua;
-                box-shadow: 1px 1px 90px red;
+                box-shadow: 1px 1px 100px red,0px 0px 40px blue,1px 0px 10px yellow;
+            }
+
+            .link{
+                visibility: hidden;
             }
            
         }
@@ -93,9 +101,47 @@
             }
         }
 
+    .link{
+        height: 8vh;
+        min-width: 100%;
+        background-color: lightgray;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .link a{
+        min-width: 20vw;
+        background: bisque;
+        text-align: center;
+        height: 6vh;
+        display: flex;
+        align-items: center;
+        justify-content: center ;
+    }
+    #active{
+        background-color: black;
+        color: bisque;
+        font-weight: bolder;
+    }
+    
+    .link a:hover{
+        background-color: black;
+        color: bisque;
+        font-weight: bolder;
+        transition: .8s;
+    }
+
     </style>
 </head>
 <body>
+    <div class="link">
+        <a href="/html/main.html" target="_blank" rel="noopener noreferrer">Main</a>
+        <a href="/html/home.html" target="_blank" rel="noopener noreferrer">HOME</a>
+
+        <a href="#" id="active">ID</a>
+        <a href="/html/user.html" target="_blank" rel="noopener noreferrer">USERS</a>
+    </div>
     <div class="main">
         <h1 style="padding-top: 10px;">&#128151 Geethanjali &#128151</h1>
         <h4>INSTITUTE OF SCIENCE & TECHNOLOGY</h4>
@@ -121,8 +167,6 @@
         </div>
         <h2 style="text-align: center;">SHAIK MASTHAN BASHA <br> _</h2>
     </div>
-    <a href="/html/user.html" style="text-align: center;">USERS</a>
-    <a href="/html/home.html" target="_blank" rel="noopener noreferrer">HOME</a>
 </body>
 
 </html>

@@ -6,35 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-            align-items: center;
-        }
+     
 
         body{
             background-color: rgb(43, 43, 66);
-        }
-
-        header .log{
             display: flex;
             justify-content: center;
             align-items: center;
-            max-width: 100%;
-            height: max-content;
         }
+        header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 42vh;
+        }
+
+     
         header .log h1{
             color: rgb(65, 96, 235);
             text-align: center;
             font-family: fantasy;
             text-shadow: 1px 1px 5px rgb(22, 61, 22);
+            height: max-content;
+            width: max-content;
         }
-        header .nav{
-            max-width: 100wh;
-            height: 10vh;
-            background-color: lawngreen;
+
+        header .log h1{
+            animation: rotate 3s linear infinite; 
         }
+
+        @keyframes rotate{
+            to{transform: rotateX(60deg);}
+            <!-- from{transform: rotateY(360deg);} -->
+          
+        
+        }
+
+        
+       
+        
     </style>
 </head>
 <body>
